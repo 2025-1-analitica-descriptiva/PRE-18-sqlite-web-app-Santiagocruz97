@@ -12,20 +12,34 @@
 
     <div style="font-family:'Times New Roman', Times, serif; ">
         <h1 style="text-align: center;color: white; background-color: black;">
-            Electric Car Company Part Request</h1>
+            Electric Car Company Part Request
+        </h1>
         <div style="text-align: center;">
             <div>
                 <form action="/requestparts" method="POST">
                     <div style="">
-                        <p style="color:grey">Part Number<br><br> <input
+                        <p style="color:grey">Part Number
+                            <br>
+                            <br> 
+                            <input 
                                 style="text-align: center;border:none; outline: none;border-bottom: 1px solid black"
-                                type="text" name="part_requested" value=""></p>
-                        <p style="color:grey">Quantity<br><br> <input
-                                style="text-align: center;border:none; outline: none;border-bottom: 1px solid black"
-                                type="number" name="amount_requested" value="">
+                                type="text" 
+                                name="part_requested" 
+                                value="">
                         </p>
-                        <input style="color:white; background-color:turquoise"
-                            type="submit" value="Request Part">
+                        <p style="color:grey">Quantity
+                            <br>
+                            <br> 
+                            <input
+                                style="text-align: center;border:none; outline: none;border-bottom: 1px solid black"
+                                type="number" 
+                                name="amount_requested" 
+                                value="">
+                        </p>
+                        <input 
+                            style="color:white; background-color:turquoise"
+                            type="submit" 
+                            value="Request Part">
                     </div>
 
                     {% if message|length >=1 %}
@@ -44,5 +58,3 @@
             </div>
         </div>
 </body>
-
-</html>
